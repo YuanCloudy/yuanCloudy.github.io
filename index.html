@@ -1,10 +1,9 @@
-HELLO WORLD
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的藍色系自我介紹</title>
+    <title>林品妘的藍色系自我介紹</title>
     <style>
         /* CSS 樣式開始 */
         :root {
@@ -70,6 +69,18 @@ HELLO WORLD
             border-radius: 5px;
             border-left: 3px solid var(--primary-blue);
         }
+        
+        /* 特別為個人資料區塊設計的樣式 */
+        .profile-data li {
+            font-weight: 500;
+            background-color: transparent;
+            border-left: 3px solid var(--dark-blue);
+        }
+        .profile-data strong {
+            color: var(--dark-blue);
+            display: inline-block;
+            min-width: 70px; /* 確保標籤對齊 */
+        }
 
         .profile-photo {
             display: block;
@@ -106,14 +117,23 @@ HELLO WORLD
     <div class="container">
 
         <header>
-            <img src="https://via.placeholder.com/150/007BFF/FFFFFF?text=Photo" alt="個人頭像" class="profile-photo">
-            <h1>張小藍 (Xiao-Lan Zhang)</h1>
+            <img src="https://via.placeholder.com/150/007BFF/FFFFFF?text=Pin-Yun" alt="個人頭像" class="profile-photo">
+            <h1>林品妘 (Lin Pin-Yun)</h1> 
         </header>
+
+        <section class="profile">
+            <h2 class="section-title">👤 個人檔案</h2>
+            <ul class="profile-data">
+                <li><strong>姓名：</strong> 林品妘</li>
+                <li><strong>生日：</strong> 12 月 6 日</li>
+                <li><strong>常用帳號：</strong> clouds._.love_money</li>
+            </ul>
+        </section>
 
         <section class="intro">
             <h2 class="section-title">🌟 關於我</h2>
             <p>
-                我是一位熱衷於**網頁設計**與**使用者體驗（UX）**的開發者。我專注於創建簡潔、高效且令人愉悅的數位產品。藍色系不僅是我的最愛，也代表我對工作的**嚴謹與專業**。
+                這是一個等待您填寫的自我介紹內容。請在這裡加入您的學經歷、興趣、對網頁設計的熱忱，以及您希望別人認識您的特質。
             </p>
         </section>
 
@@ -130,16 +150,16 @@ HELLO WORLD
         <section class="experience">
             <h2 class="section-title">🚀 工作/專案經驗</h2>
             <p>
-                在過去的三年中，我參與了多個電商網站和企業內部管理系統的介面設計與開發，特別擅長將複雜的資訊結構化，用清晰的藍色系介面呈現給使用者。
+                您可以將您的重要專案、實習經驗或比賽成果等詳細資訊填入這個區塊。
             </p>
         </section>
 
         <section class="contact">
             <h2 class="section-title">📧 聯絡資訊</h2>
             <p>
-                電子郵件：<a href="mailto:your.email@example.com">your.email@example.com</a><br>
-                作品集：<a href="#">/我的作品集連結</a><br>
-                電話：(09xx)-xxx-xxx
+                電子郵件：<a href="mailto:411435041@gms.ndhu.edu.tw">411435041@gms.ndhu.edu.tw</a><br>
+                社群媒體/其他聯絡方式：clouds._.love_money<br> 
+                作品集：<a href="#">/您的作品集連結</a>
             </p>
         </section>
 
