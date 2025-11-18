@@ -1,1 +1,149 @@
 HELLO WORLD
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的藍色系自我介紹</title>
+    <style>
+        /* CSS 樣式開始 */
+        :root {
+            /* 定義藍色變量 */
+            --primary-blue: #007BFF;       /* 主藍色 (中等亮度) */
+            --dark-blue: #0056b3;         /* 深藍色 (用於懸停效果) */
+            --background-light: #F0F8FF;  /* 極淺藍色 (背景) */
+            --text-color: #333;           /* 標準文字顏色 */
+            --header-color: #0d47a1;      /* 較深的標題藍色 */
+            --accent-color: #1E88E5;      /* 輔助藍色 (用於裝飾) */
+        }
+
+        body {
+            font-family: 'Arial', 'Microsoft JhengHei', sans-serif;
+            background-color: var(--background-light); /* 極淺藍色背景 */
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* 讓內容從頂部開始 */
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            background-color: #fff;
+            margin: 40px auto;
+            padding: 40px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* 柔和的陰影 */
+            border-radius: 12px;
+            border-top: 5px solid var(--primary-blue); /* 頂部裝飾線 */
+        }
+
+        header h1 {
+            color: var(--header-color); /* 深藍色標題 */
+            border-bottom: 3px solid var(--accent-color); /* 輔助藍色底線 */
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .section-title {
+            color: var(--primary-blue); /* 主藍色標題 */
+            font-size: 1.5em;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            padding-left: 15px;
+            border-left: 5px solid var(--accent-color); /* 左側輔助藍色裝飾 */
+        }
+
+        ul {
+            list-style: none; /* 移除預設的點點 */
+            padding: 0;
+        }
+
+        ul li {
+            background-color: rgba(0, 123, 255, 0.05); /* 非常淡的藍色背景 */
+            margin-bottom: 8px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            border-left: 3px solid var(--primary-blue);
+        }
+
+        .profile-photo {
+            display: block;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* 圓形頭像 */
+            object-fit: cover;
+            margin: 0 auto 20px;
+            border: 4px solid var(--primary-blue); /* 藍色邊框 */
+            transition: transform 0.3s ease;
+        }
+
+        .profile-photo:hover {
+            transform: scale(1.05);
+        }
+
+        .contact a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .contact a:hover {
+            color: var(--dark-blue); /* 懸停時變深藍色 */
+            text-decoration: underline;
+        }
+
+        /* CSS 樣式結束 */
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <img src="https://via.placeholder.com/150/007BFF/FFFFFF?text=Photo" alt="個人頭像" class="profile-photo">
+            <h1>張小藍 (Xiao-Lan Zhang)</h1>
+        </header>
+
+        <section class="intro">
+            <h2 class="section-title">🌟 關於我</h2>
+            <p>
+                我是一位熱衷於**網頁設計**與**使用者體驗（UX）**的開發者。我專注於創建簡潔、高效且令人愉悅的數位產品。藍色系不僅是我的最愛，也代表我對工作的**嚴謹與專業**。
+            </p>
+        </section>
+
+        <section class="skills">
+            <h2 class="section-title">🛠 我的專業技能</h2>
+            <ul>
+                <li>HTML5 & CSS3 (RWD 響應式設計)</li>
+                <li>JavaScript (React/Vue.js 基礎)</li>
+                <li>網站視覺設計與原型製作 (Figma)</li>
+                <li>基本資料庫操作 (SQL)</li>
+            </ul>
+        </section>
+
+        <section class="experience">
+            <h2 class="section-title">🚀 工作/專案經驗</h2>
+            <p>
+                在過去的三年中，我參與了多個電商網站和企業內部管理系統的介面設計與開發，特別擅長將複雜的資訊結構化，用清晰的藍色系介面呈現給使用者。
+            </p>
+        </section>
+
+        <section class="contact">
+            <h2 class="section-title">📧 聯絡資訊</h2>
+            <p>
+                電子郵件：<a href="mailto:your.email@example.com">your.email@example.com</a><br>
+                作品集：<a href="#">/我的作品集連結</a><br>
+                電話：(09xx)-xxx-xxx
+            </p>
+        </section>
+
+    </div>
+
+</body>
+</html>
